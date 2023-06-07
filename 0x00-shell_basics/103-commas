@@ -1,0 +1,1 @@
+ls -a | awk -F/ '{print $NF}' | sort -n | tr '\n' ',' | sed 's/,$/\n/'
