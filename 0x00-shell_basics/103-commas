@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a --quoting-style=shell-always | sed 's/ /\\ /g' | sed 's/$/,/' | sed 's/\(.*\),/\1/' | tr '\n' ' ' | sed 's/,$/\n/'
+ls -a -1 | sed 's/ /\\ /g' | sed 's/$/,/' | sed 's/\(.*\),/\1/' | tr '\n' ' ' | sed 's/,$/\n/'
