@@ -1,2 +1,2 @@
-#!/bin/bash
-find . -type d -empty -printf '%f %y\n' -o -type f -empty -printf '%f %y\n'
+#!/bin/bin
+find . -empty -type d -o -empty -type f | xargs -I{} basename {}
