@@ -1,2 +1,3 @@
-#!/bin/bin
-find . -type d -empty -print0 -o -type f -empty -print0 | xargs -0 -n1 basename
+#!/bin/bash
+find . -empty -type d -o -empty -type f -printf "%P\n"
+
